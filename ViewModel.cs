@@ -1,12 +1,8 @@
 ﻿using OxyPlot;
 using OxyPlot.Axes;
 using OxyPlot.Series;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace OxyPlot_charts_working_example
 {
@@ -24,7 +20,7 @@ namespace OxyPlot_charts_working_example
         {
             PlotModel = new PlotModel();
             SetUpModel();
-            LoadData();
+            //LoadData();
 
         }
 

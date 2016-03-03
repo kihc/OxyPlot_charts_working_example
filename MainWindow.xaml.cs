@@ -20,9 +20,26 @@ namespace OxyPlot_charts_working_example
     /// </summary>
     public partial class MainWindow : Window
     {
+        private ViewModel viewModel;
+
         public MainWindow()
         {
+            viewModel = new ViewModel();
+
+            DataContext = viewModel;
+
             InitializeComponent();
+
+
+        }
+
+        private void btnDraw_Click(object sender, RoutedEventArgs e)
+        {
+            
+
+            viewModel.LoadData();
+            viewModel.PlotModel.InvalidatePlot(true);
+
         }
     }
 }

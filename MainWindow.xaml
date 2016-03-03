@@ -5,12 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OxyPlot_charts_working_example"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <oxy:PlotView Model="{Binding PlotModel}">
-            <oxy:PlotView.DataContext>
-                <local:ViewModel/>
-            </oxy:PlotView.DataContext>
-        </oxy:PlotView>
+        Title="MainWindow" Height="786" Width="1024">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}">
+        <oxy:PlotView Model="{Binding PlotModel}" Margin="127,51,385,342"/>
+        <Button x:Name="button" HorizontalAlignment="Left" Margin="57,10,0,0" VerticalAlignment="Top" Width="75">
+            <Button x:Name="btnDraw" Content="Draw Chart" Width="75" Click="btnDraw_Click"/>
+        </Button>
     </Grid>
 </Window>
